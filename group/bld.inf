@@ -1,0 +1,27 @@
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+
+#ifdef SBSV2
+
+PRJ_EXTENSIONS
+	
+	START EXTENSION s60/mifconv
+	OPTION TARGETFILE aaction_0xEF2040A4.mif
+	OPTION HEADERFILE aaction_0xEF2040A4.mbg
+	OPTION SOURCEDIR ../gfx
+	OPTION SOURCES -c32 qgn_menu_AAction
+	END
+
+#else
+
+PRJ_MMPFILES
+
+
+#endif
+
+PRJ_MMPFILES
+gnumakefile Images.mk
+gnumakefile ../help/build_help.mk
+AAction.mmp

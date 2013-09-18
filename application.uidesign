@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknApplication" version="1.1.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknDocument" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknViewAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUiBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneCaption" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NaviTabs" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NaviBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.AvkonViewReference" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignReference" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.0.0</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_CONTAINER">AActionAppUi</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_APPLICATION_NAME">AAction</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknApplication">
+    <property id="className">CAActionApplication</property>
+    <property id="documentBase">AAction</property>
+    <property id="name">AActionApplication</property>
+    <property id="uid">0x2003732B</property>
+    <component id="com.nokia.sdt.series60.CAknDocument">
+      <property id="className">CAActionDocument</property>
+      <property id="name">AActionDocument</property>
+      <component id="com.nokia.sdt.series60.CAknViewAppUi">
+        <property id="initialDesign" type="componentRef">aknViewReference2</property>
+        <property id="className">CAActionAppUi</property>
+        <compoundProperty id="location">
+          <property id="x">52</property>
+          <property id="y">45</property>
+        </compoundProperty>
+        <property id="name">AActionAppUi</property>
+        <compoundProperty id="size">
+          <property id="width">240</property>
+          <property id="height">320</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.StatusPane">
+          <compoundProperty id="location">
+            <property id="x">20</property>
+          </compoundProperty>
+          <property id="name">statusPane</property>
+          <compoundProperty id="size">
+            <property id="width">204</property>
+            <property id="height">66</property>
+          </compoundProperty>
+          <component id="com.nokia.sdt.series60.StatusPaneCaption">
+            <property id="shortCaption" type="i18n">STR_AActionApplication_4</property>
+            <compoundProperty id="location">
+              <property id="x">56</property>
+            </compoundProperty>
+            <property id="longCaption" type="i18n">STR_AActionApplication_3</property>
+            <property id="name">caption</property>
+            <compoundProperty id="size">
+              <property id="width">148</property>
+              <property id="height">43</property>
+            </compoundProperty>
+          </component>
+          <component id="com.nokia.sdt.series60.NaviTabs">
+            <compoundProperty id="location">
+              <property id="x">60</property>
+              <property id="y">43</property>
+            </compoundProperty>
+            <property id="name">NaviTabs1</property>
+            <compoundProperty id="size">
+              <property id="width">144</property>
+              <property id="height">23</property>
+            </compoundProperty>
+          </component>
+        </component>
+        <component id="com.nokia.sdt.series60.CBA">
+          <compoundProperty id="location">
+            <property id="y">288</property>
+          </compoundProperty>
+          <compoundProperty id="info">
+            <property id="leftText" type="i18n">STR_AActionApplication_1</property>
+            <property id="rightText" type="i18n">STR_AActionApplication_2</property>
+          </compoundProperty>
+          <property id="name">controlPane</property>
+          <compoundProperty id="size">
+            <property id="width">240</property>
+            <property id="height">32</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">Connect.uidesign</property>
+          <property id="inTabGroup">true</property>
+          <property id="baseName">Connect</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference2</property>
+          <property id="tabText" type="i18n">STR_AActionApplication_21</property>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">Disconnect.uidesign</property>
+          <property id="inTabGroup">true</property>
+          <property id="baseName">Disconnect</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference1</property>
+          <property id="tabText" type="i18n">STR_AActionApplication_5</property>
+        </component>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_Russian">
+      <string id="STR_AActionApplication_1"/>
+      <string id="STR_AActionApplication_2"/>
+      <string id="STR_AActionApplication_3">AAction</string>
+      <string id="STR_AActionApplication_4">AAction</string>
+      <string id="STR_AActionApplication_5">Откл.</string>
+      <string id="STR_AActionApplication_21">Подкл.</string>
+    </stringTable>
+    <stringTable language="LANG_English">
+      <string id="STR_AActionApplication_1">??</string>
+      <string id="STR_AActionApplication_2">??</string>
+      <string id="STR_AActionApplication_3">??AAction</string>
+      <string id="STR_AActionApplication_4">??AAction</string>
+      <string id="STR_AActionApplication_5">??Откл.</string>
+      <string id="STR_AActionApplication_21">??Подкл.</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="aknViewReference1" rsrcId="tabText">r_application_akn_view_reference1</resourceMapping>
+      <resourceMapping instanceName="aknViewReference2" rsrcId="tabText">r_application_akn_view_reference2</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_application_status_pane</resourceMapping>
+      <resourceMapping instanceName="AActionAppUi" rsrcId="localisable_app_info">r_localisable_app_info</resourceMapping>
+      <resourceMapping instanceName="AActionAppUi">r_application_aaction_app_ui</resourceMapping>
+      <resourceMapping instanceName="NaviTabs1">r_application_navi_tabs1_resource</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="aknViewReference1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EDisconnectViewId</enumMapping>
+      <enumMapping instanceName="NaviTabs1" propertyId="tabWidth">EAknTabWidthWithTwoTabs</enumMapping>
+      <enumMapping instanceName="NaviTabs1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtNaviPane</enumMapping>
+      <enumMapping instanceName="aknViewReference2" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EConnectViewId</enumMapping>
+      <enumMapping instanceName="NaviTabs1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidNavi</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>inc/aactionapplication.h</file>
+    <file>src/disconnectview.cpp</file>
+    <file>src/connectview.cpp</file>
+    <file>src/aactionappui.cpp</file>
+    <file>inc/aactionappui.h</file>
+    <file>inc/aactiondocument.h</file>
+    <file>src/aactionapplication.cpp</file>
+    <file>src/aactiondocument.cpp</file>
+    <file>inc/connectview.h</file>
+    <file>inc/disconnectview.h</file>
+    <file>data/aaction.rss</file>
+    <file>inc/aaction.hrh</file>
+    <file>data/disconnect.rssi</file>
+    <file>inc/disconnect.hrh</file>
+    <file>data/connect.rssi</file>
+    <file>inc/connect.hrh</file>
+    <file>data/aaction.loc</file>
+    <file>data/aaction.l16</file>
+    <file>data/disconnect.loc</file>
+    <file>data/disconnect.l16</file>
+    <file>data/connect.loc</file>
+    <file>data/connect.l16</file>
+    <file>data/aaction.l01</file>
+  </generatedFiles>
+</designerData>

@@ -1,0 +1,29 @@
+/*
+========================================================================
+ Name        : AAction.loc
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2011
+
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_16
+#include "AAction.l16"
+#endif
+
+#ifdef LANGUAGE_03
+#include "AAction.l03"
+#endif
+
+#ifdef LANGUAGE_04
+#include "AAction.l04"
+#endif
+
+#ifdef LANGUAGE_01
+#include "AAction.l01"
+#endif

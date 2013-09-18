@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE cshlp SYSTEM "file:///D:/Symbian/9.3/S60_3rd_FP2_SDK_v1.1/epoc32/tools/cshlpcmp/dtd/cshlp.dtd">
+<?xml:stylesheet href="file:///D:/Symbian/9.3/S60_3rd_FP2_SDK_v1.1/epoc32/tools/cshlpcmp/xsl/cshlp.xsl" title="cshlp" type="text/xsl"?>
+<cshlp helpfileUID="537097004">
+
+
+	<topic topicID="1" categoryUID="537097004">
+		<category> ActiveJack </category>
+		<topictitle> Anwendung den ActiveJack </topictitle>
+		<synonyms> Anwendung den ActiveJack </synonyms>
+		
+		
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">ActiveJack erlaubt Ihnen Aktionen zuweisen, die auschgef&#252;hrt werden, wenn Sie Kopfh&#246;rer (Headset) aktivieren oder deaktivieren werden.</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Das Programminterface ist ein 2-Bildschirm, an die kann mann die Aktionen einf&#252;hren, die ausgef&#252;hrt werden k&#246;nnen, wenn Sie Kopfh&#246;rer aktivieren oder deaktivieren (Bildschirmabh&#228;ngig).</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Sie k&#246;nnen eine Sequenz von einigen Aktionen einstellen.</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Achten Sie: die Applikation funktioniert nicht wenn der Offline-Modus aktiviert ist.</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Liste der m&#246;glichen Aktionen:</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Reproduzieren/Pause den Musik-Player</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Den Musik-Player stoppen</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Das Programm ausf&#252;hren</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Das Programm minimisieren</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">An Programm umstellen</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Das Programm schlie&#223;en </p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Das Programm t&#246;ten. Um Programme zu schlie&#223;en, die sich nicht in der &#252;blichen Weise schlie&#223;en</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Tastatur und Bildschirm sperren</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Tastatur und Bildschirm l&#246;sen</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Lichtsensor f&#252;gen - f&#252;r die Regelung der Hintergrundbeleuchtung verwendet werden, um die automatische Helligkeitsregelung zu aktivieren</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Lichtsensor schalten - f&#252;r die Regelung der Hintergrundbeleuchtung verwendet werden, um die automatische Helligkeitsregelung zu deaktivieren (muss mann vor der Festsetzung der Hintergrundbeleuchtung hinzugef&#252;gen)</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Stellen Sie die H&#246;he der Beleuchtung. Kann auf bestimmte Modelle nicht funktionieren (funktioniert nicht auf Nokia N95, N95-8GB, N82). Vor der Einstellung der Aktion muss mann Lichtsensor deaktivieren  (falls nicht gew&#228;hlt, wird es der automatisch hinzugef&#252;gt)</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Delay. Gibt die Zeit, nach der die folgenden Schritte in der Liste auschgef&#252;hrt ist</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Profil umstellen - schaltet das aktive Profil f&#252;r das ausgew&#228;hlte Profil</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Bluetooth aktivieren</p>
+		<p font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0">Bluetooth deaktivieren</p>
+	</topic>
+<uid value="537097004"/>
+<context contextUID="ActiveJack_Information" topicID="1"/>
+<indexlink topicID="1" indexID="0" categoryUID="537097004"> Anwendung den ActiveJack </indexlink>
+<index indexID="0"> Anwendung den ActiveJack </index>
+
+<customization><titlestyle fontstyle="sansserif" size="10"/>
+<listbullet1style bulletchar="8226"/>
+<listbullet2style bulletchar="8226"/>
+<lists leftindent="20"/>
+<body font="sansserif" style="normal" size="10" color="foreground" justify="left" spacing="10" before="5" after="0" left="0" right="0"></body>
+</customization>
+<mbmlist/></cshlp>

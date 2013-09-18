@@ -1,0 +1,91 @@
+/*========================================================================
+ Name        : AAction.l01
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : KolaySoft, 2010
+ Contacts	 : kolayuk@mail.ru | http://kolaysoft.ru
+ Description : 
+========================================================================*/
+// localized strings for language: UK English (01)
+#define STR_AActionApplication_3 				"ActiveJack"	//переводить не нужно
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+#define STR_ConnectView_2 						"Hide"
+#define STR_ConnectView_1 						"Options"
+#define STR_ConnectView_7 						"Help"
+#define STR_ConnectView_11 						"Exit"
+#define STR_ConnectView_4 						"Edit"
+#define STR_ConnectView_5 						"New action"
+#define STR_ConnectView_6 						"Remove"
+
+#define STR_EmptyListboxConnect 				"Connecting\nNo actions selected" 
+#define STR_EmptyListboxDisconnect 				"Disconnecting\nNo actions selected" 
+#define STR_ActionDialogTitle 					"Select action"
+
+#define STR_ActionStop 							"Stop in music player"
+#define STR_ActionLaunch 						"Launch the application"
+#define STR_ActionHide 							"Send task to background"
+#define STR_ActionSwitchTo 						"Bring task to foreground"
+#define STR_ActionClose 						"Close task"
+#define STR_ActionKill 							"Kill task"
+#define STR_ActionKeyLockOn 					"Lock the keypad"
+#define STR_ActionKeyLockOff 					"Unlock the keypad"
+#define STR_ActionLightSensorOn 				"Enable light sensor"
+#define STR_ActionLightSensorOff 				"Disable light sensor"
+#define STR_ActionSetLight 						"Set brightness level"
+#define STR_ActionDelay 						"Delay"
+#define STR_ActionProfile 						"Switch profile"
+#define STR_ActionBTOn 							"Enable Bluetooth"
+#define STR_ActionBTOff 						"Disable Bluetooth"
+#define STR_DialogApplicationTitle 				"Select application"
+#define STR_DialogLightTitle 					"Enter brightness level"
+#define STR_DialogDelayTitle 					"Enter delay in milliseconds"
+
+#define STR_DelActionText 						"Remove action from list?"
+#define STR_AActionApplication_5 				"Disconnect"
+#define STR_AActionApplication_21 				"Connect"
+#define STR_ExitDialogCBAClose 					"Close"
+#define STR_ExitWarning 						"If you close application selected actions will not be done!"
+#define qtn_publisher_information				"Published by Alexander Fokin"
+#define qtn_autor_information					"Developed by Usanov-Kornilov Nikolay"
+
+//new in 1.1
+#define STR_ActionSound							"Play sound"
+#define STR_DialogFile							"Select a sound (*.mp3)"
+#define STR_ActionSetVolume						"Set volume in music player"
+#define STR_DialogVolume						"Enter volume (%d-%d)"
+#define STR_ActionPlay							"Play in music player"
+#define STR_ActionPause							"Pause in music player"
+#define STR_ActionPicture						"Show picture"
+
+//new in 1.2
+#define STR_ActionOpenFile						"Open file"
+#define STR_DialogSelectFile					"Select file:"
+#define STR_SettingVibrate						"Vibration"
+#define STR_SettingBT							"React to BT-headset"		//comment: the application can identify BT headset connection and not to react to it
+
+#define STR_MenuSettings						"Settings"
+#define STR_SettingsRightSoft					"Back"
+#define STR_SettingAutoStart					"Autostart"
+
+#define STR_On									"yes"
+#define STR_Off									"no"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//этот блок переводить не нужно
+#define STR_ActionPressKey 						"Press a key"
+#define STR_DialogPressKeyTitle 				"Scancode:"
+
+#define STR_ActionSimulateStylus 				"Simulate stylus press"
+#define STR_DialogStylusTitle1 					"Coordinate X:"
+#define STR_DialogStylusTitle2 					"Coordinate Y:"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//этот блок переводить не нужно
+#define qtn_about_menu 							"About"
+#define qtn_menu_goto_ovi						"Other products"
+#define qtn_gotobuy_dlgmsg						"Now the page with our products in Ovi Store shop will be opened in the browser."
+#define qtn_cancel								"Cancel"
+#define qtn_continue							"Continue"
+#define qtn_copyright_information				"(c) 2011"
+#define qtn_support_information					"Send all your questions and wishes to:"
+#define qtn_email_information					"support@symdeveloper.ru"

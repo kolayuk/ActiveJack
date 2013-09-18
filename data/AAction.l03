@@ -1,0 +1,85 @@
+/*========================================================================
+ Name        : AAction.l01
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : KolaySoft, 2010
+ Contacts	 : kolayuk@mail.ru | http://kolaysoft.ru
+ Description : 
+========================================================================*/
+// localized strings for language: Germat (03)
+#define STR_AActionApplication_3 				"ActiveJack"		//переводить не нужно
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+#define STR_ConnectView_2 						"Minimisieren"
+#define STR_ConnectView_1 						"Menu"
+#define STR_ConnectView_7 						"Hilfe"
+#define STR_ConnectView_11						"Abbruch"
+#define STR_ConnectView_4 						"Ändern"
+#define STR_ConnectView_5 						"Neue Aktion"
+#define STR_ConnectView_6 						"Löschen"
+
+#define STR_EmptyListboxConnect 				"Aktivierung\nAktionen nicht eingestellt" 
+#define STR_EmptyListboxDisconnect 				"Deaktivierung\nAktionen nicht eingestellt" 
+#define STR_ActionDialogTitle 					"Wähle Sie die Aktion"
+
+#define STR_ActionStop 							"M-Player stoppen"
+#define STR_ActionLaunch 						"Das Programm ausführen"
+#define STR_ActionHide 							"Das Programm minimisieren"
+#define STR_ActionSwitchTo 						"An Programm umstellen"
+#define STR_ActionClose 						"Das Programm schließen"
+#define STR_ActionKill 							"Programm töten"
+#define STR_ActionKeyLockOn 					"Tastatur sperren"
+#define STR_ActionKeyLockOff 					"Tastatur lösen"
+#define STR_ActionLightSensorOn 				"Lichtsensor fügen"
+#define STR_ActionLightSensorOff 				"Lichtsensor schalten"
+#define STR_ActionSetLight 						"Beleuchtung stellen"
+#define STR_ActionDelay 						"Delay"
+#define STR_ActionProfile 						"Profil umstellen"
+#define STR_ActionBTOn 							"Bluetooth aktivieren"
+#define STR_ActionBTOff 						"Bluetooth deaktivieren"
+#define STR_DialogApplicationTitle 				"Wählen Sie die Applikation"
+#define STR_DialogLightTitle 					"Geben Sie Helligkeitshöhe (0-100)"
+#define STR_DialogDelayTitle 					"Geben Sie Delay in Mikrosekunden"
+#define STR_DelActionText 						"Aktion löschen?"
+
+#define STR_AActionApplication_5 				"Deaktivierung"
+
+#define STR_AActionApplication_21 				"Aktivierung"
+
+#define STR_ExitDialogCBAClose 					"Schließen"
+#define STR_ExitWarning 						"Wenn Sie die Applikation schließen, wird die ausgewählte Aktion nicht ausgeführt"
+
+#define qtn_publisher_information 				"Verleger: Alexander Fokin"
+#define qtn_autor_information 					"Entwickler: Usanov-Kornilov Nikolay"
+
+//new in 1.1
+#define STR_ActionPlay							"Im M-Player reproduzieren"
+#define STR_ActionPause							"Pause den M-Player"
+#define STR_ActionSound							"Reporoduzieren"
+#define STR_DialogFile							"Melodie wählen (*.mp3)"
+#define STR_ActionSetVolume						"Lautstärke im M-Player aufstellen"
+#define STR_DialogVolume						"Lautstärke einführen (%d-%d)"
+#define STR_ActionPicture						"Bild zeigen"
+
+//new in 1.2
+#define STR_ActionOpenFile						"Datei öffnen"
+#define STR_DialogSelectFile					"Wählen Sie eine Datei:"
+#define STR_SettingVibrate						"Vibration"
+#define STR_SettingBT							"VibrA Auf BT-Headsets reagieren" //Kommentar: Die Applikation kann eine Verbindung mit Bluetooth-Headset nachweisen und nicht auf diese Verbindung reagieren 
+
+#define STR_MenuSettings						"Einstellungen"
+#define STR_SettingsRightSoft					"Abbruch"
+#define STR_SettingAutoStart					"Autostart"
+
+#define STR_On									"ja"
+#define STR_Off									"nein"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//этот блок переводить не нужно
+#define qtn_about_menu							"Über Programm"
+#define qtn_menu_goto_ovi						"Unsere Produkte"
+#define qtn_gotobuy_dlgmsg						"Momentan in Browser öffnet sich die Seite mit unseren Produkten in Shop Ovi Store."
+#define qtn_cancel								"Abbruch"
+#define qtn_continue							"Zum Ovi"
+#define qtn_copyright_information 				"(c) 2011"
+#define qtn_support_information					"Senden Sie alle Ihre Fragen und Wünsche an:"
+#define qtn_email_information					"support@symdeveloper.ru"

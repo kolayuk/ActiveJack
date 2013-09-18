@@ -1,0 +1,88 @@
+/*========================================================================
+ Name        : AAction.l01
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : KolaySoft, 2010
+ Contacts	 : kolayuk@mail.ru | http://kolaysoft.ru
+ Description : 
+========================================================================*/
+// localized strings for language: Russian (16)
+#define STR_AActionApplication_3 				"ActiveJack"		//переводить не нужно
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+#define STR_ConnectView_2 						"Свернуть"
+#define STR_ConnectView_1 						"Меню"
+#define STR_ConnectView_7 						"Помощь"
+#define STR_ConnectView_11						"Выход"
+#define STR_ConnectView_4 						"Изменить"
+#define STR_ConnectView_5 						"Новое действие"
+#define STR_ConnectView_6 						"Удалить"
+
+#define STR_EmptyListboxConnect 				"Подключение\nДействия не заданы" 
+#define STR_EmptyListboxDisconnect 				"Отключение\nДействия не заданы" 
+#define STR_ActionDialogTitle 					"Выберите действие"
+
+#define STR_ActionStop 							"Стоп в муз. плеере"
+#define STR_ActionLaunch 						"Запустить программу"
+#define STR_ActionHide 							"Свернуть программу"
+#define STR_ActionSwitchTo 						"Переключиться на программу"
+#define STR_ActionClose 						"Закрыть программу"
+#define STR_ActionKill 							"Убить программу"
+#define STR_ActionKeyLockOn 					"Заблокировать клавиатуру"
+#define STR_ActionKeyLockOff 					"Разблокировать клавиатуру"
+#define STR_ActionLightSensorOn 				"Включить датчик света"
+#define STR_ActionLightSensorOff 				"Выключить датчик света"
+#define STR_ActionSetLight 						"Установить уровень подсветки"
+#define STR_ActionDelay 						"Задержка"
+#define STR_ActionProfile 						"Переключить профиль"
+#define STR_ActionBTOn 							"Включить Bluetooth"
+#define STR_ActionBTOff 						"Выключить Bluetooth"
+
+//new in 1.1
+#define STR_ActionPlay							"Воспроизведение в муз. плеере"
+#define STR_ActionPause							"Пауза в муз. плеере"
+#define STR_ActionSound							"Проиграть звук"
+#define STR_ActionSetVolume						"Установить громкость в муз. плеере"
+#define STR_DialogFile							"Выберите мелодию (*.mp3)"
+#define STR_DialogVolume						"Введите громкость (%d-%d)"
+
+#define STR_DialogApplicationTitle 				"Выберите приложение"
+#define STR_DialogLightTitle 					"Введите уровень яркости (0-100)"
+#define STR_DialogDelayTitle 					"Введите длительность задержки в микросекундах"
+
+
+#define STR_DelActionText 						"Удалить действие?"
+
+#define STR_AActionApplication_5 				"Отключение"
+
+#define STR_AActionApplication_21 				"Подключение"
+
+#define STR_ExitDialogCBAClose 					"Закрыть"
+#define STR_ExitWarning 						"Если вы закроете приложение, выбранные действия не будут выполняться!"
+
+#define qtn_publisher_information 				"Издатель: Александр Фокин"
+#define qtn_autor_information 					"Разработчик: Усанов-Корнилов Николай"
+
+//new in 1.2
+#define STR_ActionOpenFile						"Открыть файл"
+#define STR_DialogSelectFile					"Выберите файл:"
+#define STR_SettingVibrate						"Вибрация"
+#define STR_SettingBT							"Обрабатывать BT гарнитуры"
+
+#define STR_MenuSettings						"Настройки"
+#define STR_SettingsRightSoft					"Назад"
+#define STR_SettingAutoStart					"Автозагрузка"
+
+#define STR_On									"Включено"
+#define STR_Off									"Выключено"
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//этот блок переводить не нужно
+#define qtn_about_menu 							"О программе"
+#define qtn_menu_goto_ovi 						"Другие продукты"
+#define qtn_gotobuy_dlgmsg 						"Сейчас в браузере откроется страница с нашими продуктами в магазине Ovi Store"
+#define qtn_cancel 								"Отмена"
+#define qtn_continue 							"Продолжить"
+#define qtn_copyright_information 				"(c) 2011"
+#define qtn_support_information 				"Все ваши вопросы и пожелания отправляйте по адресу:"
+#define qtn_email_information 					"support@symdeveloper.ru"
+
+

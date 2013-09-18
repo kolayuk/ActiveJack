@@ -1,0 +1,92 @@
+/*========================================================================
+ Name        : AAction.l01
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : KolaySoft, 2010
+ Contacts	 : kolayuk@mail.ru | http://kolaysoft.ru
+ Description : 
+========================================================================*/
+// localized strings for language: Spanish (04)
+#define STR_AActionApplication_3 				"ActiveJack"		//переводить не нужно
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+#define STR_ConnectView_2 						"Minimizar"
+#define STR_ConnectView_1 						"Menu"
+#define STR_ConnectView_7 						"Ayuda"
+#define STR_ConnectView_11						"Salir"
+#define STR_ConnectView_4 						"Cambiar"
+#define STR_ConnectView_5 						"Acción nueva"
+#define STR_ConnectView_6 						"Retirar"
+
+#define STR_EmptyListboxConnect 				"Conexión\nAcciones no son establecidas" 
+#define STR_EmptyListboxDisconnect 				"Desconexión\nAcciones no son establecidas" 
+#define STR_ActionDialogTitle 					"Elija Ud. una acción"
+
+#define STR_ActionPlayPause 					"Reproducir\\Pausa en Media Player"
+#define STR_ActionStop 							"Stop en Media Player"
+#define STR_ActionLaunch 						"Ejecutar el programa"
+#define STR_ActionHide 							"Minimizar el programa"
+#define STR_ActionSwitchTo 						"Cambiar al programa"
+#define STR_ActionClose 						"Cerrar el programa"
+#define STR_ActionKill 							"Matar el programa"
+#define STR_ActionKeyLockOn 					"Bloquear el teclado"
+#define STR_ActionKeyLockOff 					"Desbloquear el teclado"
+#define STR_ActionLightSensorOn 				"Activar el sensor de luz"
+#define STR_ActionLightSensorOff 				"Apagar el sensor de luz"
+#define STR_ActionSetLight 						"Establecer el nivel de la luz de fondo"
+#define STR_ActionDelay 						"Detención"
+#define STR_ActionProfile 						"Cambiar el perfil"
+#define STR_ActionBTOn 							"Activar Bluetooth"
+#define STR_ActionBTOff 						"Desactivar Bluetooth"
+#define STR_DialogApplicationTitle 				"Elija Ud. una aplicación"
+#define STR_DialogLightTitle 					"Indique Ud. el nivel de la luz de fondo (0-100)"
+#define STR_DialogDelayTitle 					"Indique Ud. la detención en microsegundos"
+
+#define STR_DelActionText 						"¿Retirar la acción?"
+#define STR_AActionApplication_5 				"Desactivación"
+#define STR_AActionApplication_21 				"Activación"
+#define STR_ExitDialogCBAClose 					"Cerrar"
+#define STR_ExitWarning 						"¡Si cierra la aplicación, la acción seleccionada no funciona!"
+#define qtn_publisher_information 				"Editor: Alexander Fokin"
+#define qtn_autor_information 					"Desarrollador: Usanov-Kornilov Nikolay"
+
+//new in 1.1
+#define STR_ActionPlay							"Reproducir en M-player"
+#define STR_ActionPause							"Pausa en M-player"
+#define STR_ActionSound							"Reproducir"
+#define STR_DialogFile							"Elija Ud. una melodía (*.mp3)"
+#define STR_ActionSetVolume						"Ajustar el volumen en el M-Player"
+#define STR_DialogVolume						"Establacer el volumen (%d-%d)"
+#define STR_ActionPicture						"Mostrar la imagen"
+
+//new in 1.2
+#define STR_ActionOpenFile						"Abrir fichero"
+#define STR_DialogSelectFile					"Elija Ud. un fichero:"
+#define STR_SettingVibrate						"Vibración"
+#define STR_SettingBT							"Reaccionar a BT-headsets" //Comentario: La aplicación puede definir una conexión de headset bluetooth conexión y no reaccionar a esta conexión
+
+#define STR_MenuSettings						"Configuración"
+#define STR_SettingsRightSoft					"Cancelar"
+#define STR_SettingAutoStart					"Inicio automático"
+
+#define STR_On									"sí"
+#define STR_Off									"no"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//этот блок переводить не нужно
+#define STR_ActionPressKey 						"Нажать кнопку"
+#define STR_DialogPressKeyTitle 				"Сканкод кнопки"
+
+#define STR_ActionSimulateStylus 				"Нажатие стилуса"
+#define STR_DialogStylusTitle1 					"Координата Х:"
+#define STR_DialogStylusTitle2 					"Координата Y:"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//этот блок переводить не нужно
+#define qtn_about_menu 							"Sobre el programa"
+#define qtn_menu_goto_ovi						"Nuestros productos"
+#define qtn_gotobuy_dlgmsg						"Ahora, la página con nuestros productos en la tienda Ovi Store abrirá en el navegador"
+#define qtn_cancel								"Cancelar"
+#define qtn_continue							"A Ovi"
+#define qtn_copyright_information 				"(c) 2011"
+#define qtn_support_information					"Envia todas sus preguntas y comentarios por correo electrónico a:"
+#define qtn_email_information					"support@symdeveloper.ru"

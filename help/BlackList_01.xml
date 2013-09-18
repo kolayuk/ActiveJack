@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE asptml SYSTEM "/epoc32/tools/cshlpcmp/dtd/asptml.dtd">
+<?xml:stylesheet href="/epoc32/tools/cshlpcmp/xsl/asptml.xsl" title="asptml" type="text/xsl"?>
+<asptml>
+<uid value="0x2003732C"/>
+	<topic>
+		<category> ActiveJack </category>
+		<topictitle> Using ActiveJack </topictitle>
+		<synonyms> Using ActiveJack </synonyms>
+		<context contextUID="ActiveJack_Information"/>
+		<index> Using ActiveJack </index>
+		<p>ActiveJack allows you to set actions to be performed when connecting or disconnecting headphones (headset).</p>
+		<p>The program interface has 2 screens where you can add actions that will be peformed when connecting or disconnecting headphones (depending on screen).</p>
+		<p>You can specify a sequence of several actions.</p>
+		<p>Attention: application doesn't work when offline mode is activated.</p>
+		<p>List of possible actions:</p>
+		<p>Play/Pause in the media player</p>
+		<p>Stop in the media player</p>
+		<p>Run the program</p>
+		<p>Minimize the program</p>
+		<p>Switch to the program</p>
+		<p>Close the program</p>
+		<p>Kill the program. This is used to close programs that cannot be closed in the usual way</p>
+		<p>Lock keyboard and screen</p>
+		<p>Unlock keyboard and screen</p>
+		<p>Turn on a light sensor - used to regulate the backlight to turn on automatic brightness control</p>
+		<p>Turn off the light sensor - used to regulate the backlight to turn off automatic brightness control (must be added before setting the backlight level)</p>
+		<p>Set backlight level. Can not work with certain models (it does not work for sure with Nokia N95, N95-8Gb, N82). Before adding the action you need to disable light sensor (if not selected, it will be disabled automatically)</p>
+		<p>Delay. Specifies the time after which the next action from the list is performed</p>
+		<p>Change profile - switches the active profile of the phone to the selected one</p>
+		<p>Enable Bluetooth</p>
+		<p>Disable Bluetooth</p>
+	</topic>
+</asptml>

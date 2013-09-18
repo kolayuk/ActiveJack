@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : AAction.hrh
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2011
+
+ Description : 
+========================================================================
+*/
+enum TAActionViewUids
+	{
+	EDisconnectViewId = 1,
+	EConnectViewId
+	};

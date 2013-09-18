@@ -1,0 +1,120 @@
+/*
+========================================================================
+ Name        : Disconnect.rssi
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2010
+
+ Description : 
+========================================================================
+*/
+#include "Disconnect.hrh"
+#include "AAction.loc"
+
+RESOURCE AVKON_VIEW r_disconnect_disconnect_view
+	{
+	cba = r_disconnect_control_pane;
+	toolbar = 0;
+	menubar = r_disconnect_options_menu;
+	}
+RESOURCE MENU_BAR r_disconnect_options_menu
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_disconnect_menu_pane1_menu_pane;
+				}
+			};
+
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_disconnect_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_disconnect_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_disconnect_title_resource
+	{
+	txt = STR_AActionApplication_3;
+	}
+RESOURCE LISTBOX r_disconnect_list_box
+	{
+	flags = EAknListBoxSelectionList;
+	}
+RESOURCE MENU_PANE r_disconnect_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = EDisconnectViewMenuItem1Command;
+			txt = STR_ConnectView_5;
+			},
+		MENU_ITEM
+			{
+			command = EDisconnectView_MenuItemCommand;
+			txt = STR_ConnectView_4;
+			},
+		MENU_ITEM
+			{
+			command = EDisconnectViewMenuItem2Command;
+			txt = STR_ConnectView_6;
+			},
+		//MENU_ITEM
+		//	{
+		//	command = EDisconnectView_MenuItem2Command;
+		//	txt = STR_AActionApplication_21;
+		//	},
+		MENU_ITEM
+			{
+			command = EDisconnectOpenSettings;
+			txt = STR_MenuSettings;
+			},
+		MENU_ITEM
+			{
+			command = EDisconnectViewMenuItem3Command;
+			txt = STR_ConnectView_7;
+			},
+		MENU_ITEM
+			{
+			command = EDisconnectViewMenuItem6Command;
+			txt = qtn_about_menu;
+			},
+		MENU_ITEM
+			{
+			command = EDisconnectView_MenuItem1Command;
+			txt = qtn_menu_goto_ovi;
+			},
+		MENU_ITEM
+			{
+			command = EDisconnectViewMenuItem7Command;
+			txt = STR_ConnectView_11;
+			}
+		};
+	}
+RESOURCE CBA r_disconnect_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyOptions;
+			txt = STR_ConnectView_1;
+			},
+		CBA_BUTTON
+			{
+			id = EDisconnectViewControlPaneRightId;
+			txt = STR_ConnectView_2;
+			}
+		};
+	}

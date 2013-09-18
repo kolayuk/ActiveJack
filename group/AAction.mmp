@@ -1,0 +1,99 @@
+
+TARGET				AAction.exe
+UID					0x100039CE 0x2003732B
+VENDORID			0
+TARGETTYPE			exe
+EPOCSTACKSIZE		0x8000
+
+OPTION GCCE -O2 -fno-unit-at-a-time -fno-rtti
+//OPTION GCCE -O2 -fno-unit-at-a-time -fno-rtti
+OPTION GCCE -fno-strict-aliasing
+LANG 				01 03 04 16
+
+USERINCLUDE			..\inc 
+USERINCLUDE			..\data
+SYSTEMINCLUDE		\epoc32\include 
+SYSTEMINCLUDE		\epoc32\include\variant 
+SYSTEMINCLUDE		\epoc32\include\ecom
+
+SOURCEPATH			..\src
+SOURCE				AActionAppUi.cpp 
+SOURCE				AActionApplication.cpp 
+SOURCE				AActionDocument.cpp 
+SOURCE				MenuActions.cpp 
+SOURCE				Disconnect.cpp 
+SOURCE				DisconnectView.cpp 
+SOURCE				ConnectView.cpp 
+SOURCE				Connect.cpp 
+SOURCE				CenRepObserver.cpp 
+SOURCE				OnEventAction.cpp 
+SOURCE				AboutContainer.cpp 
+SOURCE				AboutView.cpp 
+SOURCE				Utils.cpp
+SOURCE 				FileSelectDialog.cpp
+
+SOURCEPATH			..\data
+START RESOURCE		AAction.rss
+HEADER
+TARGETPATH			resource\apps
+END //RESOURCE
+
+START RESOURCE		AAction_reg.rss
+TARGETPATH 	  		\private\10003a3f\apps
+END //RESOURCE
+
+START RESOURCE 		2003A2C7.rss
+END
+
+LIBRARY				euser.lib 
+LIBRARY				apparc.lib 
+LIBRARY				cone.lib 
+LIBRARY				eikcore.lib 
+LIBRARY				avkon.lib
+LIBRARY				commonengine.lib 
+LIBRARY				efsrv.lib 
+LIBRARY				estor.lib 
+LIBRARY				eikcoctl.lib 
+LIBRARY				eikdlg.lib 
+LIBRARY				eikctl.lib 
+LIBRARY				bafl.lib 
+LIBRARY				fbscli.lib 
+LIBRARY				aknnotify.lib 
+LIBRARY				aknicon.lib
+LIBRARY				etext.lib 
+LIBRARY				gdi.lib 
+LIBRARY				egul.lib 
+LIBRARY				insock.lib
+LIBRARY				ecom.lib 
+LIBRARY				InetProtUtil.lib 
+LIBRARY				http.lib 
+LIBRARY				esock.lib
+LIBRARY				centralrepository.lib 
+LIBRARY				ws32.lib 
+LIBRARY				flogger.lib 
+LIBRARY				apgrfx.lib 
+LIBRARY				ws32.lib
+LIBRARY				commdb.lib
+LIBRARY				charconv.lib 
+LIBRARY				sendas2.lib 
+LIBRARY				HWRMLightClient.lib 
+LIBRARY				profileeng.lib
+LIBRARY				hlplch.lib 
+LIBRARY				aknskins.lib 
+LIBRARY				aknskinsrv.lib 
+LIBRARY				aknswallpaperutils.lib
+LIBRARY				mediaclientaudio.lib
+LIBRARY				HWRMVibraClient.lib
+LIBRARY 			mpxplaybackutility.lib
+LIBRARY 			mpxcollectionutility.lib
+LIBRARY				mpxcommon.lib 
+LIBRARY				apmime.lib
+LIBRARY				btengconnman.lib	
+
+CAPABILITY			ReadDeviceData WriteDeviceData LocalServices ReadUserData WriteUserData SwEvent TrustedUI PowerMgmt
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+SOURCEPATH ..\src
+SOURCE AudioPlayer.cpp SettingList.cpp SettingListView.cpp aiplayerpluginengine.cpp

@@ -1,0 +1,451 @@
+/*
+========================================================================
+ Name        : Connect.rssi
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2010
+
+ Description : 
+========================================================================
+*/
+#include "Connect.hrh"
+#include "AAction.loc"
+#include "SettingList.hrh"
+
+RESOURCE AVKON_VIEW r_about_view
+{
+	cba = R_AVKON_SOFTKEYS_OK_EMPTY;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// страница в OVI
+RESOURCE DIALOG r_continue_cancel_query
+{
+	flags = EGeneralQueryFlags;
+	buttons = r_continue_cancel_buttons;
+	items =
+	{
+		DLG_LINE
+		{
+			type = EAknCtQuery;
+			id = EGeneralQuery;
+			control = AVKON_CONFIRMATION_QUERY
+			{
+				layout = EConfirmationQueryLayout;
+				animation = R_QGN_NOTE_INFO_ANIM;
+			};
+		}
+	};
+}
+RESOURCE TBUF r_exit_warning
+	{buf=STR_ExitWarning;}
+
+RESOURCE DIALOG r_exit_hide_query
+{
+	flags = EAknGeneralQueryFlags;
+	buttons = r_exit_hide_buttons;
+	items =
+	{
+		DLG_LINE
+		{
+			type = EAknCtQuery;
+			id = EConfirmationQuery;
+			control = AVKON_CONFIRMATION_QUERY
+			{
+				layout = EConfirmationQueryLayout;
+				label = "";
+			};
+		}
+	};
+}
+RESOURCE DIALOG r_delete_query
+{
+	flags = EAknGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+	items =
+	{
+		DLG_LINE
+		{
+			type = EAknCtQuery;
+			id = EConfirmationQuery;
+			control = AVKON_CONFIRMATION_QUERY
+			{
+				layout = EConfirmationQueryLayout;
+				label = "";
+			};
+		}
+	};
+}
+
+RESOURCE CBA r_exit_hide_buttons
+{
+	buttons =
+	{
+		CBA_BUTTON
+		{
+			id = EAknSoftkeyOk;
+			txt = STR_ExitDialogCBAClose;
+		}
+		,
+		CBA_BUTTON
+		{
+			id = EAknSoftkeyCancel;
+			txt = STR_ConnectView_2;
+		}
+	};
+}
+
+RESOURCE CBA r_continue_cancel_buttons
+{
+	buttons =
+	{
+		CBA_BUTTON
+		{
+			id = EAknSoftkeyOk;
+			txt = qtn_continue;
+		}
+		,
+		CBA_BUTTON
+		{
+			id = EAknSoftkeyCancel;
+			txt = qtn_cancel;
+		}
+	};
+}
+
+
+RESOURCE AVKON_VIEW r_connect_connect_view
+	{
+	cba = r_connect_control_pane;
+	menubar = r_connect_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_connect_options_menu
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_connect_menu_pane1_menu_pane;
+				}
+			};
+
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_connect_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_connect_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_connect_title_resource
+	{
+	txt = STR_AActionApplication_3;
+	}
+RESOURCE LISTBOX r_connect_list_box
+	{
+	flags = EAknListBoxSelectionList;
+	}
+RESOURCE CBA r_connect_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyOptions;
+			txt = STR_ConnectView_1;
+			},
+		CBA_BUTTON
+			{
+			id = EConnectViewControlPaneRightId;
+			txt = STR_ConnectView_2;
+			}
+		};
+	}
+RESOURCE MENU_PANE r_connect_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = EConnectView_MenuItemCommand;
+			txt = STR_ConnectView_5;
+			},
+		MENU_ITEM
+			{
+			command = EConnectView_MenuItem7Command;
+			txt = STR_ConnectView_4;
+			},
+		MENU_ITEM
+			{
+			command = EConnectView_MenuItem1Command;
+			txt = STR_ConnectView_6;
+			},
+		//MENU_ITEM
+		//	{
+		//	command = EConnectView_MenuItem4Command;
+		//	txt = STR_AActionApplication_5;
+		//	},
+		MENU_ITEM
+			{
+			command = EConnectOpenSettings;
+			txt = STR_MenuSettings;
+			},
+		MENU_ITEM
+			{
+			command = EConnectView_MenuItem2Command;
+			txt = STR_ConnectView_7;
+			},
+		MENU_ITEM
+			{
+			command = EConnectView_MenuItem5Command;
+			txt = qtn_about_menu;
+			},
+		MENU_ITEM
+			{
+			command = EConnectView_MenuItem3Command;
+			txt = qtn_menu_goto_ovi;
+			},
+		MENU_ITEM
+			{
+			command = EConnectView_MenuItem6Command;
+			txt = STR_ConnectView_11;
+			}
+		};
+	}
+RESOURCE TBUF r_empty_listbox_connect
+	{buf=STR_EmptyListboxConnect;}
+RESOURCE TBUF r_empty_listbox_disconnect
+	{buf=STR_EmptyListboxDisconnect;}
+							
+	RESOURCE DIALOG r_action_selector
+{
+  flags = EAknDialogSelectionList;
+  buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+  items =
+  {
+    DLG_LINE
+    {
+      type = EAknCtSingleListBox;
+      id = ESelectionListControl;
+      control = LISTBOX
+      {
+	flags = EAknListBoxSelectionList;
+      };
+    }, 
+    DLG_LINE 
+    {
+      itemflags = EEikDlgItemNonFocusing;
+      id = EFindControl;
+      type = EAknCtSelectionListFixedFind; 
+    }
+  };
+}
+RESOURCE ARRAY r_actions
+	{
+	items =
+		{
+		LBUF {txt = STR_ActionPlay;},
+		LBUF {txt = STR_ActionPause;},
+		LBUF {txt = STR_ActionStop;},
+		LBUF{txt = STR_ActionSetVolume;},
+		LBUF{txt = STR_ActionLaunch;},
+		LBUF{txt = STR_ActionHide;},
+		LBUF{txt = STR_ActionSwitchTo;},
+		LBUF{txt = STR_ActionClose;},
+		LBUF{txt = STR_ActionKill;},
+		LBUF{txt = STR_ActionKeyLockOn;},
+		LBUF{txt = STR_ActionKeyLockOff;},
+		LBUF{txt = STR_ActionLightSensorOn;},
+		LBUF{txt = STR_ActionLightSensorOff;},
+		LBUF{txt = STR_ActionSetLight;},
+		LBUF{txt = STR_ActionDelay;},
+		LBUF{txt = STR_ActionProfile;},
+		LBUF{txt = STR_ActionBTOn;},
+		LBUF{txt = STR_ActionBTOff;},
+		LBUF{txt = STR_ActionSound;},
+		LBUF{txt = STR_ActionOpenFile;}
+		};
+	}
+RESOURCE TBUF r_action_dialog_title
+	{buf=STR_ActionDialogTitle;}
+						
+	RESOURCE TBUF r_stylus_title1
+	{buf=STR_DialogStylusTitle1;}
+						RESOURCE TBUF r_stylus_title2
+	{buf=STR_DialogStylusTitle2;}
+						
+	RESOURCE DIALOG R_NUMBER_QUERY
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control= AVKON_DATA_QUERY
+                {
+                layout = ENumberLayout;
+                control = AVKON_INTEGER_EDWIN
+                    {
+                    min = 0;
+                    max = 60000;
+                    };
+                };
+            }
+        };
+    }
+RESOURCE TBUF r_presskey_title
+	{buf=STR_DialogPressKeyTitle;}				
+RESOURCE TBUF r_application_title
+	{buf=STR_DialogPressKeyTitle;}
+RESOURCE TBUF r_light_title
+	{buf=STR_DialogLightTitle;}
+RESOURCE TBUF r_volume_title
+	{buf=STR_DialogVolume;}
+RESOURCE TBUF r_delay_title
+	{buf=STR_DialogDelayTitle;}
+RESOURCE TBUF r_delete_text
+	{buf=STR_DelActionText;}
+
+RESOURCE DIALOG r_file_dialog
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+        AVKON_LIST_QUERY_DLG_LINE
+            {
+            control= AVKON_LIST_QUERY_CONTROL
+                {
+				listtype = EAknCtSingleGraphicPopupMenuListBox;
+				listbox = AVKON_LIST_QUERY_LIST
+					{
+					};
+				heading = STR_DialogFile;				
+			    };
+            }
+        };
+    }
+
+RESOURCE TBUF R_PROGRAM_NAME						{buf = "ActiveJack v.%d.%d"; }
+
+RESOURCE TBUF R_PUBLISHER_INFORMATION				{buf = qtn_publisher_information;}
+RESOURCE TBUF R_AUTOR_INFORMATION					{buf = qtn_autor_information;}
+RESOURCE TBUF R_COPYRIGHT_INFORMATION				{buf = qtn_copyright_information;}
+RESOURCE TBUF R_SUPPORT_INFORMATION					{buf = qtn_support_information;}
+RESOURCE TBUF R_EMAIL_INFORMATION					{buf = qtn_email_information;}
+
+RESOURCE TBUF R_BUF_GOTOBUY_DLGMSG					{buf = qtn_gotobuy_dlgmsg;}
+
+
+
+//settings
+
+RESOURCE AVKON_VIEW r_setting_list_setting_list_view
+	{
+	cba = r_setting_list_control_pane;
+	menubar = r_setting_list_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_setting_list_options_menu
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_setting_list_menu_pane1_menu_pane;
+				}
+			};
+
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_setting_list_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_setting_list_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_setting_list_title_resource
+	{
+	txt = STR_MenuSettings;
+	}
+RESOURCE LISTBOX r_setting_list_list_box
+	{
+	flags = EAknListBoxSelectionList;
+	}
+RESOURCE CBA r_setting_list_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyOptions;
+			txt = STR_ConnectView_1;
+			},
+		CBA_BUTTON
+			{
+			id = ESettingListViewControlPaneRightId;
+			txt = STR_SettingsRightSoft;
+			}
+		};
+	}
+RESOURCE MENU_PANE r_setting_list_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = ESettingListView_MenuItemCommand;
+			txt = STR_ConnectView_4;
+			},
+		MENU_ITEM
+			{
+			command = ESettingListView_MenuItem2Command;
+			txt = STR_SettingsRightSoft;
+			}
+		};
+	}
+RESOURCE ARRAY r_setting_list_listbox_item1
+	{
+	items =
+		{
+		LBUF {txt = STR_SettingAutoStart;},
+		LBUF{txt = "";}
+		};
+	}
+RESOURCE ARRAY r_setting_list_listbox_item2
+	{
+	items =
+		{
+		LBUF{txt = STR_SettingVibrate;},
+		LBUF{txt = "";}
+		};
+	}
+
+RESOURCE ARRAY r_setting_list_listbox_item3
+	{
+	items =
+		{
+		LBUF{txt = STR_SettingBT;},
+		LBUF{txt = "";}
+		};
+	}
+RESOURCE TBUF r_on
+	{buf=STR_On;}
+		RESOURCE TBUF r_off
+	{buf=STR_Off;}
